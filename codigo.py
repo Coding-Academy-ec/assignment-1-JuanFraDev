@@ -4,6 +4,7 @@ Descripción: Este ejercicio consiste en crear una función que reciba dos núme
 """
 
 def sumar(a, b):
+    return a + b
     # Escribe aqui el return de la suma de 2 numeros
 
 """
@@ -13,8 +14,10 @@ Descripción: En este ejercicio se requiere crear una función que calcule el fa
     
 def factorial(n):
     if n == 0:
+        return 1
         # Escribe aqui el return de la operacion anterior
     else:
+        return n * factorial(n-1)
         # Escribe aqui el return de la operacion contraria a la operacion anterior
 
 """
@@ -27,6 +30,7 @@ def contar_vocales(cadena):
     contador = 0
     for letra in cadena:
         if letra in vocales:
+            contador += 1
             # Escribe aqui el contador de vocales
     return contador
 
@@ -46,6 +50,7 @@ Descripción: En este ejercicio se debe crear una función que calcule la suma d
 
 def suma_lista(lista):
     # Escribe aqui el return de la suma de todos los elementos de la lista
+    suma = 0
     for elemento in lista:
         suma += elemento
     return suma
